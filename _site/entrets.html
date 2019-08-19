@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"/>
+
+<style>
+#all{
+	margin-left:auto;
+	margin-right: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #69ABD9;
+}
+
+/* cabeça H2*/
+
+.header h2 {
+float: center;
+font-size: 100px;
+color: #000000;
+}
+
+/* cabeça H3*/
+.header h3 {
+ font-size: 30px;
+color: white;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  text-color: white;
+  background: #69ABD9;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* bar */
+
+.topnav {
+  overflow: hidden;
+  background-color: #5F5F5C;
+}
+
+/*nav links*/
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*cor hover*/
+.topnav a:hover {
+  background-color: #47C3FF;
+  color: black;
+}
+
+/* Cria as duas Colunas */
+/* Coluna esquerda */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Coluna direita */
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* bloco1 */
+.bloco1 {
+  text-align: center;
+  background-color:  #F1D360;
+  width: 100%;
+  padding: 20px;
+}
+
+.bloco2 {
+  text-align: center;
+  background-color:  #C05557;
+  width: 100%;
+  padding: 20px;
+}
+
+ .bloco {
+  text-align: center;
+  background-color:  #69ABD9;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.formulario{
+	border-radius:10px;
+	background-color:#69ABD9;
+	box-shadow: 0 1px 2px 1px rgba(0,0,0,0.5);
+	padding:25px;
+}
+.formulario h3{
+	color: black;
+	font-family:Arial,sans-serif;
+}
+hr{
+	border: 2px solid rgba(0,0,0,0.5);
+}
+fieldset{
+	background-color:#F0FFFF;
+	border:none;
+	border-radius: 10px;
+	box-shadow: 0 1px 2px 1px rgba(0,0,0,0.5);
+}
+fieldset input{
+	margin-left:5px;
+	padding-left:4px;
+	border-radius:4px;
+}
+button{
+	float:right;
+	border: 1px solid blue;
+	margin:3px;
+}
+button:hover{
+	background-color:#69ABD9;
+	transition:linear 0.5s;
+}
+
+
+.bloco h1 {
+  color: white;
+}
+
+.bloco h2 {
+	text-align: center;
+    color: black;
+}
+
+/* Efeito do card*/
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 0px;
+}
+
+/*Clear floats*/
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Rodape do site*/
+
+.footer h2{
+color: white;
+}
+
+.footer h4{
+color: white;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #5F5F5C;
+  margin-top: 20px;
+}
+
+/* orientador das colunas */
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/*responsavel pelo layout*/
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>>
+
+
+<script src="_javascript\javascript.js"></script>
+
+</head>
+<div class="#all">
+
+<body> 
+
+
+<div class="header">
+<img src="_imagens\logop.png">
+<h2>Social Graphic</h2>
+  <h3>A sua Gráfica Online com atendimento via mídias sociais.</h3>
+  
+</div>
+
+<div class="topnav">
+  <a href="#">INICIO</a>
+  <a href="#">PRODUTOS</a>
+  <a href="#">CONTATO</a>
+  <a href="mylayouthtml\entre.html" style="float:right">ENTRE</a>
+</div>
+
+
+<div class="row">
+
+  <div class="leftcolumn">
+  
+    <div class="card">
+        <h1>Social Graphic Cadastra-se </h1>
+	        <h3> ATENDIMENTO COM CADASTRO TEM DESCONTO! </h3>
+   
+    
+
+
+          <div class="formulario">
+            
+           
+            
+            
+            <form>
+             
+              <fieldset>
+                <h3>Furmalário de cadastro</h3>
+              <label for="nome">Insira um nome:</label>
+              <input type="text" id="nome" name="" size="30" placeholder="Nome completo" onfocusout="invalido(this, 1);">
+              <label id="valid1">*</label>
+              <br/>
+              <br/>
+              <lable for="idade">Insira sua idade:</lable>
+              <input type="number" id="idade" name="" size="3"
+              placeholder="Idade" min="12"  max = "100" onfocusout="invalido(this, 2);" >
+              <label id="valid2">*</label>
+              <br/>
+              <br/>
+              <label>Insira seu sexo:</label>
+              <br>
+              <input type="radio" id="masc" value="teste3a" name="sexo" checked>
+              <label for="masc">Masculino</label>
+              <input type="radio" id="fem" value="teste4a" name="sexo">
+              <label for="fem">Feminino:</label>
+              <br/>
+              <br/>
+              <label>Data de nascimento</label>
+              <input type="date" id="dat">
+              <br/>
+              <br/>
+              <label for="rg">Insira seu RG:</label>
+              <input type="text" id="rg" name="" max="13" min="11" maxlength="12" placeholder="ex.: 12.345.567-8" onfocusout="invalido(this, 3);">
+              <label id="valid3">*</label>
+              <br/>
+              <br/>
+              <label for="cpf">Insira seu cpf:</label>
+              <input type="text" id="cpf" name="" placeholder="ex.: 123.456.789-00" onfocusout="invalido(this, 4);">
+              <label id="valid4">*</label>
+              <br/>
+              <br/>
+            </fieldset>
+           
+           
+            <br/>
+            <br/>
+           
+           
+            <fieldset>
+              <h2>Conta</h2>
+              <label>email:</label>
+              <input type="email" name="" size="50" placeholder="ex.: emailexemplo@gmail.com" required id="email1" onfocusout="invalido(this, 5);">
+              <label id="valid5">*</label>
+              <br/>
+              <br/>
+              <label>confirme seu email:</label>
+              <input type="email" name="" size="50" placeholder="ex.: emailexemplo@gmail.com" required id="email2" onfocusout="invalido(this, 6);">
+              <label id="valid6">*</label>
+              <br/>
+              <br/>
+              <label>senha:</label>
+              <input type="password" name="" size="10" placeholder="Até 8 digitos" maxlength="8" required id="senha1" onfocusout="invalido(this, 7);">
+              <label id="valid7">*</label>
+              <br/>
+              <br/>
+              <label>confirme uma senha:</label>
+              <input type="password" name="" size="10" placeholder="Até 8 digitos" maxlength="8" required id="senha2" onfocusout="invalido(this, 8);">
+              <label id="valid8">*</label>
+            </fieldset>
+            </form>
+            
+            
+            <form>
+              <br/>
+              <button name="valid" type="submit" onclick="proximo()">Próximo</button>
+              <button name="clr" type="reset" value="limpar()">Limpar</button>
+              <br/>
+            </form>
+          </div>
+
+
+	  
+      
+    </div>
+  
+
+
+    
+
+
+	
+    <div class="card">
+      <h2>Sobre-nos</h2>
+      <h4>Criada em , maio, 2019 </h4>
+      <div class="bloco1" style="height:200px;"><h1> --------------------------------------------------------------------------------------------------  </h1> 
+	  <h2> Social Graphic é Uma Gráfica Online com atendimento via mídias sociais.</h2>
+		<h1> --------------------------------------------------------------------------------------------------  </h1></div>
+      <h2>Serviços</h2>
+      <h5>Serviço de impressão · Designer gráfico · Serviços profissionais
+		Banner com Madeira, Adesivos, Cardápios, Calendários, Cartazes, Criação 
+		e arte, Cartões de visita e Fidelidade, Catálogos, Convites, Flyers, Folders com dobra, Panfletos e Receituário, 
+		Trabalhamos com diversos Materiais ex: Perolux, Super300, Couche e Reciclados.</h5>
+    </div>
+	
+	
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>MIDIAS Social</h2>
+      <div class="bloco" style="height:100px;"><h1 >FACEBOOK<h1></div>
+      <h2>@SocialGraphic.graficap<h2>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="bloco"><p>Image</p></div>
+      <div class="bloco1"><p>Image</p></div>
+      <div class="bloco2"> <p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Contate-nos</h3>
+      <p>Email: socialgraphic2018@gmail.com</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+
+
+
+<p id="demo"> </p>
+
+
+  <h2>®SOCIAL GRAPHIC</h2>
+  <h4> @2019 </h4>
+</div>
+</div>
+
+
+<script>
+  var padraonome = /^[0-9]/;
+  var padraorg = /^[0-9]{2}\.[0-9]{3}\.[0-9]{3}\-[A-Za-z0-9]/;
+  var padraocpf = /^[0-9]{3}\.[0-9]{3}\.[0-9]{3}\.[0-9]{2}/;
+
+  function validnum(text){
+    return padraonome.test(text);
+  }
+  function validrg(rg){
+    return padraorg.test(rg);
+  }
+  function validcpf(cpf){
+    return padraocpf.test(cpf);
+  }
+
+  function htmlval(input, tipo){
+    if(tipo == 1){
+      if(input.value == "" || validnum(input.value)){
+        return "<label> texto inválido </label>";
+      }
+    }else if(tipo == 2){
+        if(input.value == "" || input.value < 12 || input.value > 100){
+        return "<label> texto inválido </label>";
+      }
+      return null;
+    }
+  }
+
+    function limtval(input, estado){
+      if(estado == 3){
+        if(input.value == "" || (input.validity.rangeOverflow || input.validity.rangeUnderflow || !validrg(input.value))){
+          return "<label> RG inválido </label>";
+        }
+      }else if(estado == 4){
+        if(input.value == "" || (input.validity.rangeOverflow || input.validity.rangeUnderflow || !validcpf(input.value))){
+          return "<label> CPF inválido </label>";
+        }
+      }
+      return null;
+    } 
+  
+
+  function validemail(input, estado){
+    if(estado == 5){
+    if(input.value == "" || input.value.indexOf("@")){
+      return "<label> Email inválido </label>";
+    }}
+    return null;
+  }
+
+  function validemailc(input, estado){
+    if(estado == 6){
+    if(input.value == ""|| input.value.indexOf("@")){
+      return "<label> Email inválido </label>";
+    }}
+    return null;
+  }
+
+  function validemailc(input, estado){
+    if(estado == 6){
+    if(input.value == ""|| input.value.indexOf("@")){
+      return "<label> Email inválido </label>";
+    }}
+    return null;
+  }
+  
+  function validsenha(input, estado){
+    if(estado == 7){
+    if(input.value == ""|| input.value.indexOf("*")){
+      return "<label> Á senha deve ter 1 ou mais  letra maiúscula, minúscula, numero e caractere especial </label>";
+    }}
+    return null;
+  }
+  function validsenhac(input, estado){
+    if(estado == 8){
+    if(input.value == ""|| input.value.indexOf("*")){
+      return "<label> Á senha deve ter 1 ou mais  letra maiúscula, minúscula, numero e caractere especial </label>";
+    }}
+    return null;
+  }
+  
+  function invalido(input, s){
+    var x = s;
+    var htmlvalido = document.querySelector("#valid"+x);
+    var textovalidacao = null;
+
+    if(s == 1 || s == 2){
+      textovalidacao = htmlval(input, s);
+    }else if(s == 3 || s == 4){
+      textovalidacao = limtval(input, s);
+    }else if(s == 5){
+      textovalidacao = validemail(input, s);
+    }else if(s == 6){
+      textovalidacao = validemailc(input, s);
+    }else if(s == 7){
+      textovalidacao = validsenha(input, s);
+    }else if(s == 8){
+      textovalidacao = validsenhac(input, s);
+    }
+    if(textovalidacao != null){
+      htmlvalido.innerHTML = textovalidacao;
+      htmlvalido.style.color = "red";
+    }else{
+      htmlvalido.style.color = "black";
+      htmlvalido.innerHTML = "<label>*</label>";
+    }
+  }
+
+  
+  
+  function proximo(){
+    if(document.getElementById("nome").value == ""){
+      alert("campo de nome inválido");
+    }
+  
+  }
+</script>
+
+</body>
+</html>

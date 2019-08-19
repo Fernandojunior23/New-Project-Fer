@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+
+
+\* MARGEM DO SITE *\
+
+#all{
+	margin-left:auto;
+	margin-right: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #69ABD9;
+}
+
+/* cabeça H2*/
+
+.header h2 {
+float: center;
+font-size: 100px;
+color: #000000;
+}
+
+/* cabeça H3*/
+.header h3 {
+ font-size: 30px;
+color: white;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  text-color: white;
+  background: #69ABD9;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* bar */
+
+.topnav {
+  overflow: hidden;
+  background-color: #5F5F5C;
+}
+
+/*nav links*/
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*cor hover*/
+.topnav a:hover {
+  background-color: #47C3FF;
+  color: black;
+}
+
+/* Cria as duas Colunas */
+/* Coluna esquerda */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Coluna direita */
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* bloco1 */
+.bloco1 {
+  text-align: center;
+  background-color:  #F1D360;
+  width: 100%;
+  padding: 20px;
+}
+
+.bloco2 {
+  text-align: center;
+  background-color:  #C05557;
+  width: 100%;
+  padding: 20px;
+}
+
+ .bloco {
+  text-align: center;
+  background-color:  #69ABD9;
+  width: 100%;
+  padding: 20px;
+}
+
+.bloco h1 {
+  color: white;
+}
+
+.bloco h2 {
+	text-align: center;
+    color: black;
+}
+
+/* Efeito do card*/
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 0px;
+}
+
+/*Clear floats*/
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Rodape do site*/
+
+.footer h2{
+color: white;
+}
+
+.footer h4{
+color: white;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #5F5F5C;
+  margin-top: 20px;
+}
+
+/* orientador das colunas */
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/*responsavel pelo layout*/
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
